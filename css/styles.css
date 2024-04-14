@@ -771,7 +771,7 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: flex;
+  /* display: flex; */
   align-items: center;
 }
 
@@ -789,7 +789,6 @@ ul {
   width: 16px;
   height: 16px;
   margin-right: 8px;
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
