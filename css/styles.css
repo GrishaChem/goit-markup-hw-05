@@ -580,10 +580,18 @@ ul {
   color: #fff;
   border: none;
   cursor: pointer;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .footer-form {
   display: flex;
+}
+
+.footer-icon {
+  fill: #fff;
+  margin-left: 16px;
 }
 
 /* Overlay */
