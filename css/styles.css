@@ -582,6 +582,10 @@ ul {
   cursor: pointer;
 }
 
+.footer-form {
+  display: flex;
+}
+
 /* Overlay */
 
 .overlay {
