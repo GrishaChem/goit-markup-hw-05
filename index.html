@@ -470,9 +470,20 @@
             </li>
           </ul>
         </div>
+        <div class="footer-container-3">
+          <p class="social-media">Subscribe</p>
+          <input
+            type="email"
+            name="footer-email"
+            id="footer-email"
+            placeholder="E-mail"
+            class="footer-input"
+          />
+          <button type="submit" class="subscribe">Subscribe</button>
+        </div>
       </div>
     </footer>
-    <div class="overlay is-open">
+    <div class="overlay">
       <div class="modal">
         <button type="button" class="modal-open-btn">
           <svg class="modal-icon">
@@ -527,6 +538,32 @@
               </svg>
             </div>
           </div>
+          <div>
+            <label for="user-comment" class="modal-label">Comment</label
+            ><textarea
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+              class="modal-text"
+            ></textarea>
+          </div>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              class="modal-check visually-hidden"
+              value="true"
+            />
+            <label for="policy" class="check-text">
+              <span class="fake-check-box"
+                ><svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use></svg></span
+              >I accept the terms and conditions of the
+              <a href="" class="check-link">Privacy Policy</a></label
+            >
+          </div>
+          <button type="submit" disabled>Send</button>
         </form>
       </div>
     </div>

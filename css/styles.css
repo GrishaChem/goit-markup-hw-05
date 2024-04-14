@@ -11,6 +11,10 @@ body {
   padding-bottom: 120px;
 }
 
+/* input {
+  margin: 0;
+} */
+
 h1,
 h2,
 h3,
@@ -486,8 +490,7 @@ ul {
 }
 
 .social-media-wrap {
-  /* max-width: 208px;
-  max-height: 80px; */
+  margin-right: 80px;
 }
 
 .footer-wrapper {
@@ -530,6 +533,56 @@ ul {
 .social-link:focus {
   background: #31d0aa;
 }
+
+.footer-container-3 {
+  min-width: 453px;
+  height: 80px;
+}
+
+.footer-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+  padding: 8px 16px;
+  margin-right: 24px;
+  outline: none;
+}
+
+.footer-input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.subscribe {
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  background: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Overlay */
 
 .overlay {
   width: 100%;
@@ -611,6 +664,7 @@ ul {
   background-color: transparent;
   padding-left: 38px;
   outline: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -637,6 +691,7 @@ ul {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus + .modal-field-icon {
@@ -645,4 +700,65 @@ ul {
 
 .modal-input-wrap {
   position: relative;
+}
+
+.modal-text {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 120px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 8px 16px;
+  resize: none;
+}
+
+.modal-text::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-text:focus {
+  border: 1px solid #4d5ae5;
+}
+
+.check-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: flex;
+  align-items: center;
+}
+
+.check-link {
+  line-height: 1.3;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+
+.fake-check-box {
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.modal-check:checked + .check-text .fake-check-box {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
