@@ -783,6 +783,7 @@ ul {
 }
 
 .fake-check-box {
+  display: inline-flex;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   width: 16px;
