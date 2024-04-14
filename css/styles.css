@@ -498,7 +498,7 @@ ul {
   align-items: baseline;
 }
 
-.footer-container-1 {
+.footer-container-first {
   margin-right: 120px;
 }
 
@@ -534,7 +534,7 @@ ul {
   background: #31d0aa;
 }
 
-.footer-container-3 {
+.footer-container-third {
   min-width: 453px;
   height: 80px;
 }
@@ -568,7 +568,7 @@ ul {
 .subscribe {
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background: #4d5ae5;
   font-family: "Roboto", sans-serif;
@@ -581,11 +581,12 @@ ul {
   border: none;
   cursor: pointer;
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-form {
+  gap: 24px;
   display: flex;
 }
 
